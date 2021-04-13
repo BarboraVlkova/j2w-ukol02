@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
+
 <!-- TELO STRANKY -->
-<body th:style="${vyberCitat}";>
-<blockquote th:utext="${vyberObrazek}"></blockquote>
+<body th:style="${vyberObrazek}">
+<blockquote th:text="${vyberCitat}"></blockquote>
 </body>
 </html>
