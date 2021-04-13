@@ -46,7 +46,8 @@ public class webStrankaController {
 
 //  OBRAZKY (v seznamu jich je 8)
         int cisloObrazku = nahodneCislo.nextInt(7)+1;
-        List<String> seznamSobrazky = Arrays.asList("https://source.unsplash.com/DGFwQWKf-5o/1600x900",
+        List<String> seznamSobrazky = Arrays.asList(
+                "https://source.unsplash.com/DGFwQWKf-5o/1600x900",
                 "https://source.unsplash.com/5iW15BLz_2M/1600x900",
                 "https://source.unsplash.com/dx_6rdMmuzM/1600x900",
                 "https://source.unsplash.com/DGFwQWKf-5o/1600x900",
@@ -58,7 +59,7 @@ public class webStrankaController {
 
 //  VYTVORENI OBJEKTU, POJMENOVANI
         result.addObject("vyberCitat",vyberCitat);
-        result.addObject("vyberObraz",vyberObrazek);
+        result.addObject("vyberObrazek",vyberObrazek);
 
 //  TO CO CHCI VRATIT
         return result;
