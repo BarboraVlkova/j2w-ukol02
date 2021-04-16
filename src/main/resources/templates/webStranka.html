@@ -14,7 +14,15 @@
 </head>
 
 <!-- TELO STRANKY -->
-<body th:style="${vyberObrazek}">
+<body th:style="'background-image:url('+ ${vyberObrazek} +');'">
+
+<!-- ----------------------------------------------------------- -->
+<!-- S TIMTO ZAPISEM JE TO NEFUNKCNI -->
+<!-- th:style= "'background-image: url("${vybeObrazek})-->
+<!-- ----------------------------------------------------------- -->
+
 <blockquote th:text="${vyberCitat}"></blockquote>
+
+
 </body>
 </html>

@@ -18,6 +18,7 @@ import java.util.stream.Collectors;
 
 
 // KONTROLER (nas kod, pripravuje celou stranku (odkud data, spojeni modelu a view)
+
 @Controller
 public class webStrankaController {
 
@@ -33,8 +34,9 @@ public class webStrankaController {
         ModelAndView result = new ModelAndView("webStranka");
 
 //  CITATY (v seznamu jich je 8)
-        int cisloCitatu = nahodneCislo.nextInt(7)+1;
-        List<String> seznamScitaty = Arrays.asList("„Všichni vědí naprosto přesně, jak mají žít druzí. Zato nikdy nevědí, jak mají žít oni sami.“ —  Paulo Coelho",
+        int cisloCitatu = nahodneCislo.nextInt(8);
+        List<String> seznamScitaty = Arrays.asList(
+                "„Všichni vědí naprosto přesně, jak mají žít druzí. Zato nikdy nevědí, jak mají žít oni sami.“ —  Paulo Coelho",
                 "„Uprostřed problémů leží příležitost.“ —  Albert Einstein",
                 "„Nechtěj být člověkem, který je úspěšný, ale člověkem, který za něco stojí.“ —  Albert Einstein",
                 "„Ono je lepší mluvit s chytrým člověkem o něčem hloupém než s hlupákem o něčem chytrém.“ —  Jan Werich",
@@ -45,7 +47,7 @@ public class webStrankaController {
         String vyberCitat = seznamScitaty.get(cisloCitatu);
 
 //  OBRAZKY (v seznamu jich je 8)
-        int cisloObrazku = nahodneCislo.nextInt(7)+1;
+        int cisloObrazku = nahodneCislo.nextInt(8);
         List<String> seznamSobrazky = Arrays.asList(
                 "https://source.unsplash.com/DGFwQWKf-5o/1600x900",
                 "https://source.unsplash.com/5iW15BLz_2M/1600x900",
